@@ -62,8 +62,12 @@ void ff_push(stack_t **head, unsigned int number);
 void ff_pall(stack_t **head, unsigned int number);
 int eexecute(char *content, stack_t **head, unsigned int counter, FILE *file);
 void ffree_stack(stack_t *head);
+void aaddnode(stack_t **head, int n);
+void aaddqueue(stack_t **head, int n);
+void ff_queue(stack_t **head, unsigned int counter);
+void ff_pint(stack_t **head, unsigned int counter);
 
-void f_pop(stack_t **head, unsigned int counter);
+/*void f_pop(stack_t **head, unsigned int counter);
 void f_swap(stack_t **head, unsigned int counter);
 void f_add(stack_t **head, unsigned int counter);
 void f_nop(stack_t **head, unsigned int counter);
@@ -75,9 +79,7 @@ void f_pchar(stack_t **head, unsigned int counter);
 void f_pstr(stack_t **head, unsigned int counter);
 void f_rotl(stack_t **head, unsigned int counter);
 void f_rotr(stack_t **head, __attribute__((unused)) unsigned int counter);
-void addnode(stack_t **head, int n);
-void addqueue(stack_t **head, int n);
-void f_queue(stack_t **head, unsigned int counter);
-void f_stack(stack_t **head, unsigned int counter);
+
+void f_stack(stack_t **head, unsigned int counter);*/
 
 #endif

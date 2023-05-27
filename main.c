@@ -1,4 +1,7 @@
+#define _GNU_SOURCE
 #include "monty.h"
+
+buss_t buss = {NULL, NULL, NULL, 0};
 
 /**
 * main - monty_codes interp
@@ -8,7 +11,7 @@
 */
 int main(int argc, char *argv[])
 {
-	buss_t buss = {NULL, NULL, NULL, 0};
+	/*buss_t buss = {NULL, NULL, NULL, 0};*/
 	char *content;
 	FILE *file;
 	size_t size = 0;
