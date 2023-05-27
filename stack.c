@@ -1,13 +1,12 @@
 #include "monty.h"
+
 /**
- * f_stack - printing top
- * @head: stack_head
- * @counter: linenumber
- * Return:does not return
-*/
-void f_stack(stack_t **head, unsigned int counter)
+ * monty_stack - Converts a queue to a stack.
+ * @stack: A pointer to the top mode node of a stack_t linked list.
+ * @line_number: The current working line number of a Monty bytecodes file.
+ */
+void monty_stack(stack_t **stack, unsigned int line_number)
 {
-	(void)head;
-	(void)counter;
-	bus.lifi = 0;
+	(*stack)->n = STACK;
+	(void)line_number;
 }

@@ -1,19 +1,17 @@
 #include "monty.h"
+
 /**
- * f_pint - print tops
- * @head: stak heads
- * @counter: linenumber
- * Return: not return
-*/
-void f_pint(stack_t **head, unsigned int counter)
+ * monty_pint - Prints the top value of a stack_t linked list.
+ * @stack: A pointer to the top mode node of a stack_t linked list.
+ * @line_number: The current working line number of a Monty bytecodes file.
+ */
+void monty_pint(stack_t **stack, unsigned int line_number)
 {
-	if (*head == NULL)
+	if ((*stack)->next == NULL)
 	{
-		fprintf(stderr, "L%u: can't pint, stack empty\n", counter);
-		fclose(bus.file);
-		free(bus.content);
-		free_stack(*head);
-		exit(EXIT_FAILURE);
+		set_op_tok_error(pint_error(line_number));
+		return;
 	}
-	printf("%d\n", (*head)->n);
+
+	printf("%d\n", (*stack)->next->n);
 }
